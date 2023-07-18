@@ -24,7 +24,7 @@ function scripts (){
     return src(['app/js/jquery-3.7.0.min.js',
         'app/js/jquery.validate/1.19.5/jquery.validate.min.js',
         'app/js/main.js'])
-        .pipe(concat('scripts.min.js'))
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(dest('app/js'))
@@ -51,8 +51,7 @@ function building (){
     return src([
         'app/css/style.min.css',
         'app/images/**/*',
-        'app/data/**/*',
-        'app/js/main.min.js',
+        'app/js/scripts.min.js',
         'app/**/*.html'
     ], {base: 'app'})
         .pipe(dest('dist'))

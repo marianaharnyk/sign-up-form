@@ -1,5 +1,7 @@
 # Sign-up form 
 
+You can visit deployed version by this link https://marianaharnyk.github.io/sign-up-form/
+
 ## Development server
 
 Run `npm install` to install dependencies. Then run `gulp default` to run the app locally. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
@@ -23,9 +25,6 @@ Run `gulp build` to build the project. The build artifacts will be stored in the
 
                    /app/images/
                        This folder contains static assets for this app like images, icons
-
-                    /app/data/
-                        This folder contains data with countries and its cosed.
 
                    /app/scss/
                        The SCSS files in this folder will contain the styles for your HTML files, allowing you to write more maintainable and modular CSS code.

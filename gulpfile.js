@@ -7,6 +7,7 @@ const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const clean = require('gulp-clean');
 const ghPages = require('gulp-gh-pages');
+const rename = require('gulp-rename');
 
 function styles () {
     return src('app/scss/style.scss')
@@ -20,9 +21,12 @@ function styles () {
 }
 
 function scripts (){
-    return src('app/js/main.js')
-        .pipe(concat('main.min.js'))
+    return src(['https://code.jquery.com/jquery-3.6.0.min.js',
+        'http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js',
+        'app/js/main.js'], { allowEmpty: true })
+        .pipe(concat('scripts.min.js'))
         .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(dest('app/js'))
         .pipe(browserSync.stream());
 }

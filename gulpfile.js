@@ -21,8 +21,8 @@ function styles () {
 }
 
 function scripts (){
-    return src(['node__modules/jquery/dist/**.js',
-        'node__modules/jquery-validation/dist/**.js',
+    return src(['app/js/jquery-3.7.0.min.js',
+        'app/js/jquery.validate/1.19.5/jquery.validate.min.js',
         'app/js/main.js'])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())

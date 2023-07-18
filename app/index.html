@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Sign-up form</title>
+</head>
+<body>
+<section class="main">
+    <div class="main__container">
+        <div class="main__header">
+            <div class="main__logo logo">
+                <img src="images/logo-icon.svg" class="logo__icon" alt="Logo icon">
+            </div>
+            <h1 class="main__title">
+            <span class="main__title main__title-accent">
+                Sign Up
+            </span>
+                and find the best place to rest while traveling
+            </h1>
+        </div>
+        <div class="main__form form">
+            <form action="" name="registration" class="form__container">
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/name-icon.svg" alt="user name icon">
+                    </div>
+                    <div class="form__group">
+                        <input placeholder="First Name" type="text" name="firstName" id="firstName" class="form__field">
+                        <label for="firstName" class="form__label">First Name</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/second-name-icon.svg" alt="user second name icon">
+                    </div>
+                    <div class="form__group">
+                        <input placeholder="Second Name" type="text" name="secondName" id="secondName" class="form__field">
+                        <label for="secondName" class="form__label">Second Name</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/country-icon.svg" alt="country icon">
+                    </div>
+                    <div class="form__group select">
+                        <select required id="country" name="country" class="form__field select__text">
+                            <option value="" selected disabled hidden></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/phone-icon.svg" alt="phone icon">
+                    </div>
+                    <div class="form__group">
+                        <input id="phone" name="phone" type="tel" placeholder="Phone" class="form__field">
+                        <label for="phone" class="form__label">Phone</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/password-icon.svg" alt="password icon">
+                    </div>
+                    <div class="form__group">
+                        <input id="password" type="password" name="password" placeholder="Password" class="form__field">
+                        <label for="password" class="form__label">Password</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/confirm-password-icon.svg" alt="confirm password icon">
+                    </div>
+                    <div class="form__group">
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Confirm password" class="form__field">
+                        <label for="confirmPassword" class="form__label">Confirm password</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__image">
+                        <img src="images/mail-icon.svg" alt="mail icon icon">
+                    </div>
+                    <div class="form__group">
+                        <input id="email" name="email" type="email" placeholder="Email" class="form__field">
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                </div>
+                <div class="form__checkbox checkbox">
+                    <input type="checkbox" name="agree" id="checkbox" class="checkbox__field">
+                    <label for="checkbox" class="checkbox__label">
+                        I agree to the
+                        <a href="#" target="_blank" class="checkbox__link">
+                            Terms & Conditions
+                        </a>
+                    </label>
+                </div>
+                <input class="form__button"
+                       type="submit"
+                       value="Sign Up">
+            </form>
+        </div>
+    </div>
+    <div class="main__bottom bottom">
+        <p class="bottom__text">If you have an account, <a href="" class="bottom__text bottom__text-link">Log In</a></p>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

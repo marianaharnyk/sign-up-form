@@ -21,9 +21,9 @@ function styles () {
 }
 
 function scripts (){
-    return src(['https://code.jquery.com/jquery-3.6.0.min.js',
-        'http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js',
-        'app/js/main.js'], { allowEmpty: true })
+    return src(['node__modules/jquery/dist/**.js',
+        'node__modules/jquery-validation/dist/**.js',
+        'app/js/main.js'])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
